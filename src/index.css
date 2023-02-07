@@ -1,0 +1,167 @@
+body,
+html,
+body>div:first-child,
+div#__next,
+div#__next>div {
+  height: 100%;
+  background-color: #202023;
+  font-family: 'Inconsolata', monospace;
+}
+
+.overflow {
+  height: 50%;
+  overflow: hidden;
+}
+
+.overflow .card-img-top {
+  transform: scale(1);
+  transition: all 0.2s ease-in-out;
+}
+
+.overflow .card-img-top:hover {
+  transform: scale(1.8);
+}
+
+.img_index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 70% !important;
+  text-align: center;
+  align-items: center;
+}
+
+.img_index img {
+  width: 300px;
+}
+
+.card_body {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card_body2 {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.h3_body {
+  width: 450px;
+}
+
+.bg_dark {
+  background-color: #202023;
+}
+
+.title_index {
+  font-family: 'Inconsolata', monospace;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 44px;
+  border-radius: 10px;
+  margin: 50px;
+  padding: 20px;
+  color: white;
+}
+
+.container_index {
+  font-family: 'Inconsolata', monospace;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 27px;
+  color: white;
+}
+
+.stack_container {
+  padding-top: 10px;
+  width: 100px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.skills_section {
+  padding-top: 10px;
+  border-radius: 10px;
+  font-family: 'Inconsolata', monospace;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 27px;
+}
+
+.highlighted-word {
+  text-decoration: none;
+  background-position-y: -0%;
+  background-image: linear-gradient(transparent 50%, #39FADB 50%);
+  transition: background 500ms ease;
+  background-size: 2px;
+  background-size: auto 175%;
+}
+
+.highlighted-word:hover {
+  background-position-y: 100%;
+  color: #202023;
+}
+
+.mail {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 3px solid gold;
+}
+
+.wave {
+  animation-name: wave-animation;
+  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;
+  /* Change to speed up or slow down */
+  animation-iteration-count: infinite;
+  /* Never stop waving :) */
+  transform-origin: 70% 70%;
+  /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(14deg);
+  }
+
+  /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+
+  30% {
+    transform: rotate(14deg);
+  }
+
+  40% {
+    transform: rotate(-4deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  60% {
+    transform: rotate(0deg);
+  }
+
+  /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
